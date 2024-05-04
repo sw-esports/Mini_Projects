@@ -4,7 +4,10 @@
   "description": "this is mini aap for practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build"
   },
   "author": "suraj maurya",
   "license": "ISC",
@@ -13,6 +16,7 @@
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.3",
     "tailwind": "^4.0.0"
